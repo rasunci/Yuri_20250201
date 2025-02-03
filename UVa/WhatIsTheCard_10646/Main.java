@@ -42,13 +42,11 @@ public class Main {
         List<String> answers = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int testCases = Integer.parseInt(br.readLine());
-            for (int i = 0; i < testCases; i++) {
+            for (int i = 0; i < testCases; i++)
                 answers.add(solution.solve(br.readLine()));
-            }
         }
         int counter = 0;
-        for (String answer : answers) {
+        for (String answer : answers)
             System.out.println("Case " + (++counter) + ": " + answer);
-        }
     }
 }
